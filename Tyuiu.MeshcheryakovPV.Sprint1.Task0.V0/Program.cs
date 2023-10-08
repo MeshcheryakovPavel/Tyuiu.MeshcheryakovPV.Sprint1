@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using Tyuiu.MeshcheryakovPV.Sprint1.Task1.V26.Lib;
+using Tyuiu.MeshcheryakovPV.Sprint1.Task0.V26.Lib;
 
-//Написать программу, которая запрашивает у пользователя исходные данные,
-//вычисляет результат по формуле 5*x/ (2+y) и печатает его на экране.
-namespace Tyuiu.MeshcheryakovPV.Sprint1.Task1.V26
-
+namespace Tyuiu.MeshcheryakovPV.Sprint1.Task0.V26
 {
     class Program
     {
@@ -20,34 +17,26 @@ namespace Tyuiu.MeshcheryakovPV.Sprint1.Task1.V26
             Console.Title = "Спринт #1 | Выполнил: Мещеряков П.В. | ИИПБ-23-2";
 
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* Спринт #1                                                               *");
+            Console.WriteLine("* Спринт #0                                                               *");
             Console.WriteLine("* Тема: Создание итогового решения по спринту                             *");
-            Console.WriteLine("* Задание #1                                                              *");
-            Console.WriteLine("* Вариант #26                                                             *");
+            Console.WriteLine("* Задание #0                                                              *");
+            Console.WriteLine("* Вариант #0                                                              *");
             Console.WriteLine("* Выполнил Мещеряков П.В. | ИИПб-23-2                                     *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу, которая вычисляет выражение 5*x/ (2+y)              *");
+            Console.WriteLine("* Написать программу, которая вычисляет выражение 4*5/2-18/2/3            *");
             Console.WriteLine("* и печатает результат на экране.                                         *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-
-            double x, y;
-            Console.WriteLine("Введите значения X:");
-            x = Convert.ToDouble(Console.ReadLine());
-
-            Console.WriteLine("Введите значения Y:");
-            y = Convert.ToDouble(Console.ReadLine());
-
+            Console.WriteLine("* 4*5/2-18/2/3                                                            *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine(ds.Calculate(x, y));
-
-            Console.ReadLine(); 
+            Console.WriteLine(ds.Calculate());
+            Console.ReadLine();
 
         }
     }

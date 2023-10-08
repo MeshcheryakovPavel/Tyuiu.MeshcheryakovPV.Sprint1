@@ -3,52 +3,39 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Tyuiu.MeshcheryakovPV.Sprint1.Task5.V5.Lib;
 
-using Tyuiu.MeshcheryakovPV.Sprint1.Task1.V26.Lib;
-
-//Написать программу, которая запрашивает у пользователя исходные данные,
-//вычисляет результат по формуле 5*x/ (2+y) и печатает его на экране.
-namespace Tyuiu.MeshcheryakovPV.Sprint1.Task1.V26
-
+namespace Tyuiu.MeshcheryakovPV.Sprint1.Task5.V5
 {
     class Program
     {
         static void Main(string[] args)
         {
             DataService ds = new DataService();
-
             Console.Title = "Спринт #1 | Выполнил: Мещеряков П.В. | ИИПБ-23-2";
-
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #1                                                               *");
-            Console.WriteLine("* Тема: Создание итогового решения по спринту                             *");
-            Console.WriteLine("* Задание #1                                                              *");
-            Console.WriteLine("* Вариант #26                                                             *");
-            Console.WriteLine("* Выполнил Мещеряков П.В. | ИИПб-23-2                                     *");
+            Console.WriteLine("* Тема: Преобразование типов и класс Convert                              *");
+            Console.WriteLine("* Задание #5                                                              *");
+            Console.WriteLine("* Вариант 5                                                               *");
+            Console.WriteLine("* Выполнил: Мещеряков Павел Викторович | ИИПБ-23-2                        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу, которая вычисляет выражение 5*x/ (2+y)              *");
-            Console.WriteLine("* и печатает результат на экране.                                         *");
+            Console.WriteLine("* Написать программу, которая решает следующую задачу:                    *");
+            Console.WriteLine("* Присвоить целой переменной d первую цифру из дробной части              *");
+            Console.WriteLine("* вещественного числа x                                                   *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-
-            double x, y;
-            Console.WriteLine("Введите значения X:");
+            double x;
+            Console.WriteLine("Введите значение x:");
             x = Convert.ToDouble(Console.ReadLine());
-
-            Console.WriteLine("Введите значения Y:");
-            y = Convert.ToDouble(Console.ReadLine());
-
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-
-            Console.WriteLine(ds.Calculate(x, y));
-
-            Console.ReadLine(); 
-
+            Console.WriteLine("Первая цифра из дробной части числа = " + ds.Calculate(x));
+            Console.ReadKey();
         }
     }
 }
